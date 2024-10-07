@@ -84,6 +84,7 @@ body{
   .container3 img{
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
   .container3 h3{
@@ -125,18 +126,50 @@ body{
 }
 
 .cont51 img{
-    height:auto;
-    width:100%;
+  height:auto;
+  width:100%;
     border-radius: 10px;
 }
 
 
 .container5 h3{
-    color: white;
+  color: white;
 }
 
 .cont52 img{
   margin-top:25px;
   width: 100%;
   border-radius: 10px;
+}
+
+
+/*------------------- container6------------------ */
+
+.container6{
+  width: 80%;
+  height: auto;
+  margin:auto;
+  margin-top: 50px;
+}
+
+.container6 h3{
+  color:white;
+}
+
+.container6 img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*------------------- container7------------------ */
+.container7{
+  width:80%;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.container7 h3{
+  color: white;
 }
