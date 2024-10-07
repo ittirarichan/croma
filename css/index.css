@@ -173,3 +173,92 @@ body{
 .container7 h3{
   color: white;
 }
+
+/*------------------- container8------------------ */
+.container8{
+  height: auto;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.container8 img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.container8 h3{
+  color: white;
+}
+
+/*------------------- container9------------------ */
+.container9 h3{
+  color: white;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/*------------------- container10------------------ */
+.container10{
+  height:auto;
+  width: 80%;
+  background-color: black;
+  overflow-y: hidden;
+  display: flex;
+  gap:20px;
+  margin: auto;   
+  align-items: center;
+  /* overflow-x: hidden; */
+}
+.cont100{
+  /* background-color: aqua; */
+  min-width: 7vw;
+  max-height:20vh;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.cont100 img{
+  margin-top: 50px;   
+  width: 100%;
+  height: 100%;
+}
+
+.container10 h3{
+  color: white;
+  display: grid;
+}
+
+
+/*------------------- container11------------------ */
+.container11{
+  height: auto;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.container11 img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+/*------------------- container12------------------ */
+
+.container12{
+  height: auto;
+  width: 80%;
+  margin: auto;
+}
+
+.container12 img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container12 h3{
+  color: white;
+  margin-top: 50px;
+}
