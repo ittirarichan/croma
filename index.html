@@ -10,42 +10,102 @@
 
 
   <!-- ------------------------NavBar---------------------------- -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">Navbar scroll</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: black;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./images/Croma_Logo_acrkvn.svg" alt="Croma Logo" class="img-fluid"></a>
+        <!-- Toggler for mobile screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Link</a>
-              </li>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Dropdown menu1 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <img src="./images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon"> Menu
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item active" href="#"><img src="./image/crown.svg" alt="" width="30px"> Exclusive at Croma</a></li>
+                        <hr>
+                        <!-- Nested Dropdown -->
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="mainDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Main Dropdown
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="mainDropdown">
+                                <li><a class="dropdown-item" href="#">Action 1</a></li>
+                                <li><a class="dropdown-item" href="#">Action 2</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Submenu 1</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Submenu Action 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Submenu Action 2</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Action 3</a></li>
+                            </ul>
+                        </div>
+                        <!-- <li class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Top Brands
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Brand 1</a></li>
+                                <li><a class="dropdown-item" href="#">Brand 2</a></li>
+                                <li><a class="dropdown-item" href="#">Brand 3</a></li>
+                            </ul>
+                        </li> -->
+                        <hr>
+                        <li><a class="dropdown-item" href="#">Croma Store Locator</a></li>
+                        <hr>
+                        <li><a class="dropdown-item" href="#">Gift Card</a></li>
+                        <hr>
+                        <b class="px-3">Shop by Category</b>
+                        <hr>
+                        <!-- Nested Dropdown for Category -->
+                        <li class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Television & Accessories</a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">All Telivitions & Accsseories  </a></li>
+                                <li><a class="dropdown-item" href="#">Nested Action 2</a></li>
+                                <li><a class="dropdown-item" href="#">Nested Action 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+
+            <!-- Search bar responsive -->
+            <div class="d-flex col-12 col-md-6 mx-auto">
+                <form class="input-group">
+                    <img src="./images/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Search Icon" class="input-group-text">
+                    <input type="text" class="form-control" placeholder="What are you looking for?" aria-label="Search">
+                </form>
+            </div>
+
+            <!-- Location and User icons responsive -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#"><img src="./images/location_on_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Location Icon"> Mumbai, 400049</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><img src="./images/person_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="User Icon"></a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./images/shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Cart Icon"></a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </div>
+</nav>
+
 
 
 <!-- ------------------------carousel---------------------------- -->
@@ -270,7 +330,7 @@
           </div>
           
           <!-- ----------------container13------------------------- -->
-           <div class="container13">
+          <div class="container13">
             <div class="cont130"><img src="./images/13_fbzbpw.webp" alt=""></div>
             <div class="cont130"><img src="./images/12_hfsle3.webp" alt=""></div>
             <div class="cont130"><img src="./images/8_dvwyxd.webp" alt=""></div>
@@ -285,9 +345,10 @@
             <div class="cont130"><img src="./images/14_xtc6jg.webp" alt=""></div>
             <div class="cont130"><img src="./images/10_iobxyi.webp" alt=""></div>
             <div class="cont130"><img src="./images/9_rqohp4.webp" alt=""></div>
-           </div>
-
-
+          </div>
+          
+          <!-- ----------------footer------------------------- -->
+          
           <script src="./js/bootstrap.bundle.min.js"></script>
       </body>
 </html>

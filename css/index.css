@@ -7,6 +7,15 @@ body{
   background-color: black;
   overflow-x: hidden;
 }
+/*------------------- nav------------------ */
+.navbar{
+  width: 80%;
+  margin: auto;
+
+}
+
+
+
 /*------------------- container1------------------ */
 
 .container1{
